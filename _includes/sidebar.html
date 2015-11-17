@@ -1,0 +1,17 @@
+<nav id="featured-work" role="secondary">
+
+    {% for post in site.posts %}
+    <a href="{{post.url}}">
+
+        <div class="preview">
+            <img src="{{post.preview}}" alt="{{post.title}}">
+        </div>
+
+        <div class="intro">
+            <h2>{{post.title}}</h2>
+            <p>{{post.description}}</p>
+        </div>
+    </a>
+    {% endfor %}
+
+</nav>
