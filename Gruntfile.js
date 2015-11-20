@@ -10,7 +10,7 @@ module.exports = function(grunt){
                     mangle: false
                 },
                 files: {
-                    '_site/scripts.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']
+                    'scripts.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']
                 }
             },
             dev: {

@@ -3312,6 +3312,6 @@ _$=window.$;jQuery.noConflict=function(deep){if(window.$===jQuery){window.$=_$}i
 // Expose jQuery and $ identifiers, even in
 // AMD (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
 // and CommonJS for browser emulators (#13566)
-if(typeof noGlobal===strundefined){window.jQuery=window.$=jQuery}return jQuery});var Sidebar=function(elem){this.open=function(e){e.preventDefault();elem.removeClass("loaded").addClass("opened loading");elem.find(".post-container").load(this.href+" header",function(){elem.removeClass("loading").addClass("loaded")})};this.close=function(){elem.removeClass("opened loaded")};/* Main Init */
+if(typeof noGlobal===strundefined){window.jQuery=window.$=jQuery}return jQuery});$(function(){var btn=$("[data-featured]"),target=$(btn.data("featured")),ani="bounceIn",dance=function(){target.addClass("animated "+ani);setTimeout(function(){target.removeClass("animated "+ani)},750)};btn.on("click hover",dance)});var Sidebar=function(elem){this.open=function(e){e.preventDefault();elem.removeClass("loaded").addClass("opened loading");elem.find(".post-container").load(this.href+" header",function(){elem.removeClass("loading").addClass("loaded")})};this.close=function(){elem.removeClass("opened loaded")};/* Main Init */
 elem=$(elem);elem.find("nav a").click(this.open);elem.find(".close").click(this.close)};$(function(){new Sidebar("#sidebar")});
 //# sourceMappingURL=scripts.js.map
