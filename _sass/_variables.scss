@@ -3,25 +3,37 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+$white: #efefef;
+$orange: #fca120;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+//sidebar
+$default-width: 95px;
+$default-padding: 10px;
+$open-width: 295px;
+$thumb-width: 75px;
+$intro-width: ($open-width - ($default-padding * 3 )) - $thumb-width;
+$article-width: 450px;
 
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;
   }
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.peek {
+    width: $open-width;
+
+    .intro {
+        visibility: visible;
+        opacity: 1;
+    }
 }
