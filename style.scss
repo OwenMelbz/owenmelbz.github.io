@@ -9,6 +9,19 @@
 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
+@keyframes colours {
+    0% { color: #a24bcf }
+    33% { color: #4b79cf }
+    66% { color: #4bc5cf }
+    100% { color: #a24bcf }
+}
+@keyframes test {
+    0% { color: #a24bcf }
+    33% { color: #4b79cf }
+    66% { color: #4bc5cf }
+    100% { color: #a24bcf }
+}
+
 html {
     height: 100%;
 }
@@ -196,7 +209,8 @@ footer {
                     font-weight: 700;
                     line-height: 24px;
                     color: $orange;
-                    text-transform: uppercase
+                    animation: colours 10s ease infinite;
+                    text-transform: uppercase;
                 }
 
                 p {
@@ -214,6 +228,10 @@ footer {
 
             &:hover {
                 @extend .peek;
+
+                .intro {
+
+                }
             }
         }
     }
@@ -254,7 +272,9 @@ footer {
                 h1 {
                     text-transform: uppercase;
                     font-size: 24px;
+                    font-weight: 700;
                     color: $orange;
+                    //animation: colours 10s ease infinite;
                     margin-bottom: 10px;
                 }
 
