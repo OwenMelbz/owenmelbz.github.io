@@ -1,9 +1,9 @@
-<div id="sidebar">
+<div id="sidebar" {% if page.class %} class="opened loaded" {% endif %}>
 
     <nav id="featured-work" role="secondary">
 
         {% for post in site.posts %}
-        <a href="{{post.url}}">
+        <a href="{{post.url}}" title="{{post.title}}">
 
             <div class="preview">
                 <img src="{{post.preview}}" alt="{{post.title}}">
@@ -21,7 +21,11 @@
     <article id="active-work">
         <i class="fa fa-times-circle close"></i>
         <div class="loader"><div class="loader-inner ball-triangle-path"><div></div><div></div><div></div></div></div>
-        <div class="post-container"></div>
+        <div class="post-container">
+            <div class="wrapper {{page.class}}">
+                {{content}}
+            </div>
+        </div>
     </article>
 
 </div>

@@ -21,7 +21,7 @@ body {
     background-color: #181818;
     background-image: url('/images/background.svg');
     background-position: center right;
-    background-size: contain;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 
     color: $white;
@@ -144,6 +144,12 @@ footer {
             height: $default-width;
             margin-bottom: 10px;
 
+            cursor: pointer;
+
+            * {
+                cursor: inherit;
+            }
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -216,7 +222,7 @@ footer {
         float: left;
         position: relative;
 
-        height: 100%;
+        min-height: 100%;
         width: 1px;
         margin-right: -1px;
 
@@ -225,10 +231,61 @@ footer {
         transition-delay: .2s;
 
         .post-container {
+
+            height: 900px;
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+
             .js & {
                 opacity: 0;
                 transition: opacity .5s;
                 transition-delay: .5s;
+            }
+
+            .wrapper {
+                box-sizing: border-box;
+                padding: 35px;
+
+                * {
+                    max-width: 100%;
+                }
+
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    color: $orange;
+                    margin-bottom: 10px;
+                }
+
+                h2 {
+                    letter-spacing: 1px;
+                    line-height: 110%;
+                    margin-bottom: 10px;
+                }
+
+                p, li, blockquote {
+                    font-family: 'Lato';
+                    font-weight: 300;
+                    line-height: 140%;
+                }
+
+                ol, ul {
+                    list-style: disc;
+
+                    li {
+                        line-height: 120%;
+                        margin-top: 10px;
+                    }
+                }
+
+                img {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                @import 'nelsons-journey';
+                @import 'gaming-deluxe';
             }
         }
     }

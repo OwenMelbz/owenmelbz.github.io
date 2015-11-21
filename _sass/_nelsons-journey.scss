@@ -1,0 +1,17 @@
+&.nelsons-journey {
+
+    .nj-thumb {
+
+        display: inline-block;
+        margin-top: 20px;
+        width: 49%;
+        height: 100px;
+        border: none;
+
+        text-align: center;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
