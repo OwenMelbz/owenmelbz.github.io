@@ -11,3 +11,8 @@
 >
 > This is my first attempt and out come.
 > Feel free to browse the code.
+
+## To do
+
+* Hook up back button with the push history state.
+* Add final portfolio item.
