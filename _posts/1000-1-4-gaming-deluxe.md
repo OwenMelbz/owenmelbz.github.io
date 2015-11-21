@@ -18,7 +18,7 @@ class: gaming-deluxe
 
 > After taking a hit from the recent google updates
 > GamingDeluxe needed a refresh with a responsive twist quickly
-> to regain traction from organic search results
+> to regain traction from organic search results.
 
 ![GD Tablet Screenshot](/images/gaming-deluxe/tablet.png)
 
