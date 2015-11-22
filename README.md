@@ -19,3 +19,4 @@
 * Setup SSL and CloudFlare
 * 404 Page
 * Lazy-load FontAwesome
+* Make Responsive
