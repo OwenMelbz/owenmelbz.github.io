@@ -16,7 +16,5 @@
 
 * Hook up back button with the push history state.
 * Add final portfolio item.
-* Setup SSL and CloudFlare
 * 404 Page
-* Lazy-load FontAwesome
 * Make Responsive
