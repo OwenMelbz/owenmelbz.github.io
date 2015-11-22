@@ -6,28 +6,28 @@
 
           @keyframes colours {
               0% {
-                  fill: #a24bcf;
+                  fill: #4bc5cf;
               }
               33% {
                   fill: #4b79cf;
               }
               66% {
-                  fill: #4bc5cf;
+                  fill: #a24bcf;
               }
               100% {
-                  fill: #a24bcf;
+                  fill: #4bc5cf;
               }
           }
 
           #bottom-stripe {
-              fill: #a24bcf;
-              animation: colours 60s ease infinite;
+              fill: #4bc5cf;
+              animation: colours 40s ease infinite;
           }
 
           #top-stripe {
-              fill: #a24bcf;
-              animation: colours 60s ease infinite;
-              animation-delay: 5s;
+              fill: #4bc5cf;
+              animation: colours 40s ease infinite;
+              animation-delay: 3s;
           }
 
         ]]>
@@ -43,8 +43,8 @@
       <path d="M21 405.023v390l405 405h195l239.28 45.032L216 600.023l-195-195z" fill="#222" />
       <path d="M.026 405l195 195 41.24-35.078-195.676-200.9L.026 405z" fill-opacity=".3" fill="url(#a)" transform="translate(21)" />
       <g>
-         <path d="M1006 .023l-405 405v390l405 405h195l239.28 45.032L796 600.023l598.89-600H1006z" fill="#a24bcf" id="top-stripe" />
-         <path d="M601 405.023v390l405 405h195l239.28 45.032L796 600.023l-195-195z" fill="#a24bcf" id="bottom-stripe" />
+         <path d="M1006 .023l-405 405v390l405 405h195l239.28 45.032L796 600.023l598.89-600H1006z" fill="#4bc5cf" id="top-stripe" />
+         <path d="M601 405.023v390l405 405h195l239.28 45.032L796 600.023l-195-195z" fill="#4bc5cf" id="bottom-stripe" />
          <path d="M.026 405l195 195 41.24-35.078-195.676-200.9L.026 405z" fill-opacity=".3" fill="url(#a)" transform="translate(601)" />
       </g>
    </g>
