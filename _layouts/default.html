@@ -9,12 +9,18 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+        <style type="text/css" id="critical-css">
+        {% capture include_to_scssify %}
+            {% include critical.scss %}
+        {% endcapture %}
+        {{ include_to_scssify | scssify }}
+        </style>
+
+        <noscript><link href="{{ site.baseurl }}/style.css" rel="stylesheet"></noscript>
     </head>
 
     <body>
         {% include header.html %}
-        {% include navigation.html %}
         {% include sidebar.html %}
         {% include footer.html %}
     </body>

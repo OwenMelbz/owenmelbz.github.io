@@ -1,126 +1,10 @@
 ---
 ---
 
-@import "reset";
 @import "variables";
 @import "animate";
 @import "hover/hover";
 @import "loaders/loaders";
-
-html {
-    height: 100%;
-}
-
-body {
-
-    min-height: 100%;
-    overflow: auto;
-
-    background-color: #181818;
-    background-image: url('/images/background.svg');
-    background-position: center right;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-
-    color: $white;
-    font-family: 'Montserrat', 'Helventica Neue', 'Helventica', 'Arial', sans-serif;
-}
-
-header {
-
-    * {
-        transition: color .2s;
-
-        &:hover {
-            color: #fff;
-        }
-    }
-
-    h1 {
-        margin-top: 75px;
-        margin-top: 30vh;
-        margin-bottom: 0;
-        display: inline-block;
-        padding: 5px 10px 5px 20px;
-        background: #000;
-
-        font-weight: 700;
-        font-size: 37px;
-        text-transform: uppercase;
-    }
-
-    h2 {
-        display: inline-block;
-        padding: 5px 10px 5px 20px;
-        background: #000;
-
-        font-size: 32px;
-        font-weight: 300;
-        font-family: 'Lato';
-        text-transform: uppercase;
-
-        cursor: default;
-    }
-}
-
-nav[role="navigation"] {
-
-    margin-top: 20px;
-    width: 180px;
-
-    @extend %clearfix;
-
-    a {
-        float: left;
-
-        display: block;
-        margin-bottom: 10px;
-        padding: 5px 10px 5px 20px;
-        background: #000;
-
-        font-family: 'Lato';
-        font-weight: 300;
-        font-size: 17px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: $white;
-
-        &:before {
-            background: $orange;
-        }
-
-        transition: color .2s;
-
-        &:hover {
-            color: #fff;
-        }
-    }
-
-}
-
-footer {
-
-    margin-top: 30px;
-
-    //sticky footer init.
-    @media(min-height: 445px){
-        position: fixed;
-        left: 0;
-        bottom: 10px;
-    }
-
-    cite {
-        display: inline-block;
-
-        padding: 5px 10px 5px 20px;
-        background: #000;
-
-        font-weight: 400;
-        font-size: 9px;
-        text-transform: uppercase;
-        color: $white;
-    }
-}
 
 #sidebar {
     position: fixed;
@@ -131,8 +15,8 @@ footer {
     nav {
         float: left;
         overflow: hidden;
-        margin-top: 75px;
-        margin-top: 30vh;
+
+        @include vertical-align();
 
         a {
             display: block;
@@ -161,6 +45,10 @@ footer {
             font-weight: 400;
             font-size: 17px;
 
+            -webkit-transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -moz-transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -ms-transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            -o-transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             transition: width .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
             .preview {
@@ -190,7 +78,15 @@ footer {
                 width: $intro-width;
                 margin-left: $default-padding;
 
+                -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+                -moz-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+                -ms-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+                -o-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
                 transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+                -webkit-transition-delay: .2s;
+                -moz-transition-delay: .2s;
+                -ms-transition-delay: .2s;
+                -o-transition-delay: .2s;
                 transition-delay: .2s;
 
                 h2 {
@@ -202,7 +98,7 @@ footer {
                 }
 
                 p {
-                    font-family: 'Lato';
+                    font-family: 'Lato', verdana;
                     font-size: 12px;
                     font-weight: 300;
                     line-height: 14px;
@@ -233,7 +129,15 @@ footer {
         margin-right: -1px;
 
         background: #000;
+        -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+        -moz-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+        -ms-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
         transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+        -webkit-transition-delay: .2s;
+        -moz-transition-delay: .2s;
+        -ms-transition-delay: .2s;
+        -o-transition-delay: .2s;
         transition-delay: .2s;
 
         .post-container {
@@ -245,12 +149,19 @@ footer {
 
             .js & {
                 opacity: 0;
+                -webkit-transition: opacity .5s;
+                -moz-transition: opacity .5s;
+                -ms-transition: opacity .5s;
+                -o-transition: opacity .5s;
                 transition: opacity .5s;
+                -webkit-transition-delay: .2s;
+                -moz-transition-delay: .5s;
+                -ms-transition-delay: .5s;
+                -o-transition-delay: .5s;
                 transition-delay: .5s;
             }
 
             .wrapper {
-                box-sizing: border-box;
                 padding: 35px;
 
                 * {
@@ -272,7 +183,7 @@ footer {
                 }
 
                 p, li, blockquote {
-                    font-family: 'Lato';
+                    font-family: 'Lato', verdana;
                     font-weight: 300;
                     line-height: 140%;
                 }
@@ -310,6 +221,10 @@ footer {
 
         background-color: rgba(0,0,0,0.8);
 
+        -webkit-transition: opacity .5s;
+        -moz-transition: opacity .5s;
+        -ms-transition: opacity .5s;
+        -o-transition: opacity .5s;
         transition: opacity .5s;
 
         .loader-inner {
@@ -321,6 +236,10 @@ footer {
     .close {
         visibility: hidden;
         opacity: 0;
+        -webkit-transition: opacity .5s linear .5s, color .5s;
+        -moz-transition: opacity .5s linear .5s, color .5s;
+        -ms-transition: opacity .5s linear .5s, color .5s;
+        -o-transition: opacity .5s linear .5s, color .5s;
         transition: opacity .5s linear .5s, color .5s;
 
         position: absolute;
@@ -331,6 +250,10 @@ footer {
         cursor: pointer;
 
         &:hover {
+            -webkit-animation: fa-spin .5s;
+            -moz-animation: fa-spin .5s;
+            -ms-animation: fa-spin .5s;
+            -o-animation: fa-spin .5s;
             animation: fa-spin .5s;
             color: $orange;
         }
