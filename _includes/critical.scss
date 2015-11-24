@@ -29,7 +29,9 @@ body {
 
 header {
 
-    @include vertical-align();
+    @media(min-height: 300px){
+        @include vertical-align();
+    }
 
     * {
         -webkit-transition: color .2s;
@@ -113,7 +115,7 @@ footer {
     margin-top: 30px;
 
     //sticky footer init.
-    @media(min-height: 445px){
+    @media(min-height: 300px){
         position: fixed;
         left: 0;
         bottom: 10px;
@@ -137,6 +139,8 @@ footer {
     right: 0;
     top: 0;
     height: 100%;
+
+    display: none;
 
     nav {
         float: left;
