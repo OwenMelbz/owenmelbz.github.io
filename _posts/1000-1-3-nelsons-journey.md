@@ -35,5 +35,5 @@ class: nelsons-journey
 * a balloon release ceremony as a symbol of letting go of negative feelings of grief
 * advice and support whatever the time or situation
 
-<a class="nj-thumb" href="#"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
-<a class="nj-thumb" href="#"><img src="/images/nelsons-journey/play-store.svg" alt="Google Play Store" /></a>
+<a class="nj-thumb" href="javascript:alert('coming soon :)');"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
+<a class="nj-thumb" href="javascript:alert('coming soon :)');"><img src="/images/nelsons-journey/play-store.svg" alt="Google Play Store" /></a>
