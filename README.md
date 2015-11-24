@@ -14,7 +14,4 @@
 
 ## To do
 
-* Hook up back button with the push history state.
-* Add final portfolio item.
-* 404 Page
 * Make Responsive
