@@ -12,6 +12,8 @@
     top: 0;
     height: 100%;
 
+    display: block;
+
     nav {
         float: left;
         overflow: hidden;
@@ -197,7 +199,7 @@
                     }
                 }
 
-                img {
+                img:not(.emoji) {
                     margin-top: 30px;
                     margin-bottom: 30px;
                 }
@@ -205,6 +207,7 @@
                 @import 'nelsons-journey';
                 @import 'gaming-deluxe';
                 @import '4ex';
+                @import 'sandy';
             }
         }
     }
