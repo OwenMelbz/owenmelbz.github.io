@@ -59,6 +59,32 @@ var Sidebar = function( elem ){
     elem.find('.close').click(this.close);
     elem.find('.back').click(this.back);
     window.onpopstate = this.browser_click;
+
+    if( 'ontouchstart' in document.documentElement ){
+
+        var Mc = new Hammer(elem[0]),
+            animating = false;
+
+        Mc.on('panright', function(ev) {
+
+            if( !animating ){
+
+                animating = true;
+
+                if( elem.hasClass('opened') ){
+                    self.back();
+                }
+                else {
+                    self.close();
+                }
+
+                setTimeout(function(){
+                    animating = false;
+                }, 650);
+            }
+
+        });
+    }
 };
 
 $(function(){

@@ -7,7 +7,8 @@ module.exports = function(grunt){
                 options: {
                     compress: true,
                     preserveComments: false,
-                    mangle: false
+                    sourceMap: false,
+                    mangle: true
                 },
                 files: {
                     'scripts.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']
@@ -15,10 +16,10 @@ module.exports = function(grunt){
             },
             dev: {
                 options: {
-                    compress: false,
-                    preserveComments: true,
-                    sourceMap: true,
-                    mangle: false
+                    compress: true,
+                    preserveComments: false,
+                    sourceMap: false,
+                    mangle: true
                 },
                 files: {
                     'scripts.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']

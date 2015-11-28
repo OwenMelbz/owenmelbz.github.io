@@ -15,10 +15,7 @@
         width: 100%;
 
         .close {
-            display: inline-block;
-            opacity: 1;
-            visibility: visible;
-            z-index: 20;
+            display: none !important;
         }
 
         nav {
