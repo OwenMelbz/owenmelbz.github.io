@@ -62,8 +62,8 @@ var Sidebar = function( elem ){
 
     if( 'ontouchstart' in document.documentElement ){
 
-        var Mc = new Hammer(elem[0]),
-            animating = false;
+        var Mc    = new Hammer(elem[0], { direction: 4, threshold: 100 }),
+        animating = false;
 
         Mc.on('panright', function(ev) {
 
