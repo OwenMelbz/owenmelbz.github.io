@@ -11,3 +11,6 @@
 >
 > This is my first attempt and out come.
 > Feel free to browse the code.
+
+## To Do
+Look at migrating .svg's to `_includes` so they can be inlined to reduce http requests?
