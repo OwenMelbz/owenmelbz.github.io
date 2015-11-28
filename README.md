@@ -11,7 +11,3 @@
 >
 > This is my first attempt and out come.
 > Feel free to browse the code.
-
-## To do
-
-* Make Responsive
