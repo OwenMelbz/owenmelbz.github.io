@@ -39,6 +39,17 @@
             }
         }
 
+        article {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 15;
+
+            .wrapper {
+                padding-top: 45px;
+            }
+        }
+
         &.opened {
 
             .close {
@@ -48,17 +59,6 @@
             .back {
                 visibility: visible;
                 opacity: 1;
-            }
-
-            article {
-                position: absolute;
-                top: 0;
-                right: 0;
-                z-index: 15;
-
-                .wrapper {
-                    padding-top: 45px;
-                }
             }
         }
     }
