@@ -65,7 +65,7 @@ var Sidebar = function( elem ){
         var Mc    = new Hammer(elem[0], { direction: 4, threshold: 100 }),
         animating = false;
 
-        Mc.on('panright', function(ev) {
+        Mc.on('swiperight', function(ev) {
 
             if( !animating ){
 
