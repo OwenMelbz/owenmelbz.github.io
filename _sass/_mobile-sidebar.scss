@@ -1,0 +1,65 @@
+@include mobile {
+
+    background: rgba(0,0,0,0.6);
+    left: 100%;
+    right: initial;
+    -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+
+
+    &.mobile-opened {
+        left: 0;
+        width: 100%;
+
+        .close {
+            display: inline-block;
+            opacity: 1;
+            visibility: visible;
+            z-index: 20;
+        }
+
+        nav {
+            width: 320px;
+            height: 100%;
+            float: right;
+            padding-top: 30px;
+            background: #000;
+            z-index: 10;
+
+            a {
+                width: inherit;
+
+                .intro {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &.opened {
+
+            .close {
+                display: none;
+            }
+
+            .back {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            article {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 15;
+
+                .wrapper {
+                    padding-top: 45px;
+                }
+            }
+        }
+    }
+}

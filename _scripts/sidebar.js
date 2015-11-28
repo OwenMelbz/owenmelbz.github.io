@@ -3,13 +3,15 @@ var Sidebar = function( elem ){
     var self     = this,
     author       = $('meta[name="author"]').attr('content'),
     description  = $('meta[name="notice"]').attr('content'),
-    title_suffix = author + ' - ' + description;
+    title_suffix = author + ' - ' + description,
+    container    = $(elem).find('.post-container');
 
     this.load_project = function( url, title, back_btn ){
 
         elem.removeClass('loaded').addClass('opened loading');
+        container.animate({scrollTop: 0});
 
-        elem.find('.post-container').load( url + ' .post-container .wrapper', function(){
+        container.load( url + ' .post-container .wrapper', function(){
             elem.removeClass('loading').addClass('loaded');
 
             if( !back_btn ){
@@ -31,7 +33,7 @@ var Sidebar = function( elem ){
 
     this.close = function(){
 
-        elem.removeClass('opened loaded');
+        elem.removeClass('opened loaded mobile-opened');
 
         history.pushState({
             url: '/',
@@ -39,6 +41,10 @@ var Sidebar = function( elem ){
         }, title_suffix, '/');
 
         document.title = history.state.title;
+    };
+
+    this.back = function(){
+        elem.removeClass('opened loaded');
     };
 
     this.browser_click = function(){
@@ -51,6 +57,7 @@ var Sidebar = function( elem ){
     elem = $(elem);
     elem.find('nav a').click(this.open);
     elem.find('.close').click(this.close);
+    elem.find('.back').click(this.back);
     window.onpopstate = this.browser_click;
 };
 

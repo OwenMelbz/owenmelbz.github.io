@@ -14,6 +14,14 @@
 
     display: block;
 
+    > .close {
+        display: none;
+    }
+
+    @include small {
+        transition: background-color .4s;
+    }
+
     nav {
         float: left;
         overflow: hidden;
@@ -112,11 +120,14 @@
                 }
             }
 
-            &:hover {
-                @extend .peek;
+            @include desktop {
+                &:hover {
+                    width: $open-width;
 
-                .intro {
-
+                    .intro {
+                        visibility: visible;
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -141,6 +152,27 @@
         -ms-transition-delay: .2s;
         -o-transition-delay: .2s;
         transition-delay: .2s;
+
+        .back {
+
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+
+            svg {
+                height: 20px;
+            }
+
+            span {
+                position: relative;
+                top: -4px;
+                font-family: 'Lato';
+                font-weight: 300;
+            }
+        }
 
         .post-container {
 
@@ -239,34 +271,56 @@
     .close {
         visibility: hidden;
         opacity: 0;
-        -webkit-transition: opacity .5s linear .5s, color .5s;
-        -moz-transition: opacity .5s linear .5s, color .5s;
-        -ms-transition: opacity .5s linear .5s, color .5s;
-        -o-transition: opacity .5s linear .5s, color .5s;
-        transition: opacity .5s linear .5s, color .5s;
+        -webkit-transition: opacity .2s linear;
+        -moz-transition: opacity .2s linear;
+        -ms-transition: opacity .2s linear;
+        -o-transition: opacity .2s linear;
+        transition: opacity .2s linear;
 
         position: absolute;
         top: 10px;
         right: 10px;
-        font-size: 16px;
+
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
 
         cursor: pointer;
 
+        svg {
+            height: 20px;
+            width: 20px;
+
+            path {
+                transition: fill .5s linear;
+            }
+        }
+
         &:hover {
-            -webkit-animation: fa-spin .5s;
-            -moz-animation: fa-spin .5s;
-            -ms-animation: fa-spin .5s;
-            -o-animation: fa-spin .5s;
-            animation: fa-spin .5s;
-            color: $orange;
+            -webkit-animation: spin .5s;
+            -moz-animation: spin .5s;
+            -ms-animation: spin .5s;
+            -o-animation: spin .5s;
+            animation: spin .5s;
+            opacity: 1 !important;
+
+            svg {
+                path {
+                    fill: $orange;
+                }
+            }
         }
     }
 
     &.opened {
 
+        @include small {
+            background-color: #000;
+        }
+
         .close {
             visibility: visible;
-            opacity: 1;
+            opacity: 0.7;
         }
 
         nav {
@@ -274,14 +328,22 @@
             a {
                 width: $default-width;
 
-                &:hover {
-                     @extend .peek;
+                @include desktop {
+                    &:hover {
+                         width: $open-width;
+
+                        .intro {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
 
         article {
-            width: $article-width;
+            max-width: $article-width;
+            width: 100%;
             margin-right: 0;
         }
     }
@@ -301,4 +363,7 @@
             }
         }
     }
+
+    @import "mobile-sidebar";
 }
+

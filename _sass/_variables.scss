@@ -15,8 +15,26 @@ $intro-width: ($open-width - ($default-padding * 3 )) - $thumb-width;
 $article-width: 450px;
 
 // Mobile breakpoints
+@mixin small {
+  @media screen and (max-width: 545px) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 770px) and (min-width: 641px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 770px) {
     @content;
   }
 }
@@ -27,15 +45,6 @@ $article-width: 450px;
     display: table;
     clear: both;
   }
-}
-
-.peek {
-    width: $open-width;
-
-    .intro {
-        visibility: visible;
-        opacity: 1;
-    }
 }
 
 @mixin vertical-align($position: relative) {
