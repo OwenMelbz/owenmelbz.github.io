@@ -23,7 +23,7 @@
     }
 
     nav {
-        float: left;
+        float: right;
         overflow: hidden;
 
         @include vertical-align();
@@ -134,10 +134,11 @@
     }
 
     article {
-        float: left;
+        float: right;
         position: relative;
 
         min-height: 100%;
+        max-width: $article-width;
         width: 1px;
         margin-right: -1px;
 
@@ -182,6 +183,11 @@
             height: 100vh;
             overflow-y: auto;
             overflow-x: hidden;
+            width: 100vw;
+
+            @media(min-width: 450px){
+                width: $article-width;
+            }
 
             .js & {
                 opacity: 0;
@@ -344,7 +350,6 @@
         }
 
         article {
-            max-width: $article-width;
             width: 100%;
             margin-right: 0;
         }
@@ -359,7 +364,9 @@
     }
 
     &.loaded {
+
         article {
+
             .post-container {
                 opacity: 1;
             }
