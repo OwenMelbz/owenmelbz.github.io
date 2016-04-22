@@ -9,7 +9,7 @@ class: nelsons-journey
 # {{page.title}}
 ## {{page.description}}
 
-> Whilst working at Selesti we designed and developed
+> As a part of the <a href="https://www.selesti.com" target="_blank">Selesti</a> team, we designed and developed
 > an iOS and Android App in association with Nelsons Journey, a BBC Children in Need
 > funded project helping children suffering from bereavement by
 > providing them with a secure platform to express their feelings and
@@ -35,5 +35,8 @@ class: nelsons-journey
 * a balloon release ceremony as a symbol of letting go of negative feelings of grief
 * advice and support whatever the time or situation
 
-<a class="nj-thumb" href="javascript:alert('coming soon :)');"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
-<a class="nj-thumb" href="javascript:alert('coming soon :)');"><img src="/images/nelsons-journey/play-store.svg" alt="Google Play Store" /></a>
+#### Case Study
+> You can read the full case study on the <a href="https://www.selesti.com/work/nelsons-journey" target="_blank">Selesti</a> website and always contact <a href="mailto:hello@selesti.com">hello@selesti.com</a> if you've got a project you'd like us to work on or have any questions about this project!
+
+<a class="nj-thumb" href="https://itunes.apple.com/en/app/smiles-tears/id965830012?mt=8" target="_blank"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
+<a class="nj-thumb" href="https://play.google.com/store/apps/details?id=org.uk.nelsonsjourney.app&hl=en_GB" target="_blank"><img src="/images/nelsons-journey/play-store.svg" alt="Google Play Store" /></a>

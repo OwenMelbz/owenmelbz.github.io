@@ -9,8 +9,9 @@ class: sandy
 # {{page.title}}
 ## {{page.description}}
 
-> The brief was to create an iPad app which would allow
-> models to be able to take their Sandra Reynolds portfolios
+> One of my first iPad application projects at <a href="https://www.selesti.com" target="_blank">Selesti</a> involved
+> creating a platform which would allow models to
+> able to take their Sandra Reynolds portfolios
 > to castings without requiring internet access, as well as allowing
 > the app to double up as a short-listing platform so businesses
 > can easily locally save their favourite prospects to a short-list.
