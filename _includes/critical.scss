@@ -178,6 +178,10 @@ footer {
             font-weight: 400;
             font-size: 17px;
 
+            @include small {
+                margin-bottom: 32px;
+            }
+
             .preview {
 
                 display: block;
