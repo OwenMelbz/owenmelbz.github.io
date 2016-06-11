@@ -16,25 +16,25 @@ $article-width: 450px;
 
 // Mobile breakpoints
 @mixin small {
-  @media screen and (max-width: 545px) {
+  @media (max-width: 545px) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media (max-width: 640px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (max-width: 770px) and (min-width: 641px) {
+  @media (max-width: 770px) and (min-width: 641px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: 770px) {
+  @media (min-width: 770px) {
     @content;
   }
 }

@@ -120,6 +120,11 @@ nav[role="navigation"] {
         &:hover {
             color: #fff;
         }
+
+        @include mobile {
+            padding: 10px 20px 10px 20px;
+            margin-bottom: 15px;
+        }
     }
 
 }
@@ -177,10 +182,6 @@ footer {
 
             font-weight: 400;
             font-size: 17px;
-
-            @include small {
-                margin-bottom: 32px;
-            }
 
             .preview {
 
