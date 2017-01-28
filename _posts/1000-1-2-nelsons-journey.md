@@ -17,6 +17,13 @@ class: nelsons-journey
 
 ![Nelsons Journey Preview](/images/nelsons-journey/header.png)
 
+### BBC Children in Need TV Slot
+> Recently Nelsons Journey gained lots of media attention as it was featured on
+> TV with a small segment talking with children about how the app has
+> helped them overcome issues.
+
+<iframe style="margin-top: 20px;" src="https://player.vimeo.com/video/157449916?title=0&byline=0&portrait=0" width="380" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ### The app has 5 main aims:
 
 * To help increase the self-esteem of bereaved children and young people
@@ -25,7 +32,7 @@ class: nelsons-journey
 * Provide education about bereavement
 * Help families talk more openly about their bereavement
 
-![Nelons Journey Features](/images/nelsons-journey/screenshots.png)
+![Nelsons Journey Features](/images/nelsons-journey/screenshots.png)
 
 ### Virtual coping strategies
 > The app aims to mirror activities that Nelson Journey deliver offline to help children deal with bereavement. It offers a virtual version of:

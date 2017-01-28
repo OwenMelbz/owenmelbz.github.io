@@ -23,6 +23,16 @@ var Sidebar = function( elem ){
             }
 
             document.title = history.state.title;
+
+            if($('body').hasClass('is_mobile') && !$(elem).hasClass('mobile-opened')) {
+                $(elem).addClass('mobile-opened')
+            }
+
+            try {
+                ga('send', 'pageview', location.pathname);
+            } catch(exception) {
+                console.error('google anlaytics not found.');
+            }
         });
     };
 

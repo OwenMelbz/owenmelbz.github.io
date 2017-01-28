@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gaming Deluxe
-description: Responsive eCommerce website for europes largest computer game server provider.
+description: Responsive eCommerce website for Europes largest computer game server provider.
 preview: /images/gaming-deluxe/thumbnail.svg
 class: gaming-deluxe
 ---

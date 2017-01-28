@@ -1,6 +1,7 @@
 $(function(){
 
-    var btn = $('[data-featured]'),
+    var body = $('body'),
+    btn = $('[data-featured]'),
     target  = $(btn.data('featured')),
     sidebar = $('#sidebar'),
     ani     = 'bounceIn',
@@ -29,12 +30,14 @@ $(function(){
 
         match: function(){
 
+            body.addClass('is_mobile');
             btn.on('click', openMenu);
             sidebar.on('click', closeMenu);
         },
 
         unmatch: function(){
 
+            body.removeClass('is_mobile');
             btn.off('click', openMenu);
 
             sidebar
