@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gaming Deluxe
-description: Responsive eCommerce website for Europes largest computer game server provider.
+description: Responsive eCommerce website for Europe's largest computer game server provider.
 excerpt: A highly functional bespoke eCommerce build for digital products serving the online gaming community around the UK, EU and USA.
 preview: /images/gaming-deluxe/thumbnail.svg
 class: gaming-deluxe
@@ -10,7 +10,7 @@ class: gaming-deluxe
 # {{page.title}}
 ## {{page.description}}
 
-> GamingDeluxe are Europes leading game server provider,
+> GamingDeluxe are Europe's leading game server provider,
 > they offer a vast array of high quality game servers
 > that is hosted on their own network, meaning they can offer
 > low prices for a solid service.

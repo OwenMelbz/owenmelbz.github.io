@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Freelance UX and Web Development for Hire
-description: If you have a web project you need some help with, please do not hesitate to get in touch.
+title: Freelance UX and Web Development
+description: If you have a web project you need some help with or any questions, please do not hesitate to get in touch.
 excerpt: From freelance UX consultancy, to bespoke Laravel applications or even simple WordPress builds, please get in touch - owen@owenmelbourne.com
 preview: /images/gaming-deluxe/thumbnail.svg
 class: services
@@ -22,4 +22,4 @@ If you need some idea of my skill set and what tools I'm familiar with, heres a 
 
 UX, UI, SEO, CRO, SVG, Photoshop, Sketch, Illustrator, inDesign, HTML, CSS, Javascript/ES2015, NodeJS, PHP, Laravel, Kohana, Wordpress, Security, Composer, Gulp, Grunt, Webpack, GIT, Jekyll, Hosting, DNS, CloudFlare, Docker, Vagrant, Linux, macOS, 🍕, 🍕 and 🍕
 
-If you find yourself needing any of the above - or maybe anything else (web related of course) then please don't hesitate to <a href="mailto:&#111;&#119;&#101;&#110;&#64;&#111;&#119;&#101;&#110;&#109;&#101;&#108;&#98;&#111;&#117;&#114;&#110;&#101;&#46;&#99;&#111;&#109;">get in touch</a>.
+If you find yourself needing any of the above - or maybe anything else then please don't hesitate to <a href="mailto:&#111;&#119;&#101;&#110;&#64;&#111;&#119;&#101;&#110;&#109;&#101;&#108;&#98;&#111;&#117;&#114;&#110;&#101;&#46;&#99;&#111;&#109;">get in touch</a>.
