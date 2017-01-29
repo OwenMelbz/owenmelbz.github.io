@@ -103,6 +103,7 @@
                     font-size: 16px;
                     font-weight: 700;
                     line-height: 24px;
+                    letter-spacing: 1px;
                     color: $orange;
                     text-transform: uppercase;
                 }
@@ -112,7 +113,6 @@
                     font-size: 12px;
                     font-weight: 300;
                     line-height: 14px;
-
 
                     &.nelsons-journey-mod {
                         margin-top: 5px;
@@ -211,30 +211,33 @@
                 }
 
                 h1 {
-                    text-transform: uppercase;
                     font-size: 24px;
-                    font-weight: 700;
-                    color: $orange;
-                    margin-bottom: 10px;
+                    font-weight: 300;
+                    font-family: 'Lato';
+                    line-height: 26px;
+                    color: #fff;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #fff;
+                    padding-bottom: 10px;
                 }
 
                 h2 {
                     letter-spacing: 1px;
                     line-height: 125%;
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                 }
 
                 p, li, blockquote {
                     font-family: 'Lato', verdana;
                     font-weight: 300;
-                    line-height: 140%;
+                    line-height: 150%;
                 }
 
                 ol, ul {
                     list-style: disc;
 
                     li {
-                        line-height: 120%;
+                        line-height: 150%;
                         margin-top: 10px;
                     }
                 }
@@ -245,8 +248,8 @@
                 }
 
                 a {
-                    font-weight: 700;
-                    color: #CCEEFF;
+                    //text-decoration: underline;
+                    border-bottom: 1px solid #fff;
                 }
 
                 @import 'nelsons-journey';

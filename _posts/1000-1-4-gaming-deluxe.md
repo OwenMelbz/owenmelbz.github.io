@@ -29,3 +29,5 @@ class: gaming-deluxe
 > approach allowing a coherent experience across platforms.
 
 ![GD Mobile Screenshot](/images/gaming-deluxe/mobile.png)
+
+<a style="display: block; margin: 15px 0;" href="https://www.gamingdeluxe.co.uk/" target="_blank">View the website.</a>

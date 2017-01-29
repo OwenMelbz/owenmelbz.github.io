@@ -33,4 +33,4 @@ class: sandy
 > The app has been available to download since 2014 and has since helped over 100 models
 > to take their portfolio around the country with them and has received great feedback.
 
-<a class="center" target="_blank" href="https://itunes.apple.com/gb/app/sandra-reynolds-agency/id882301851?mt=8" title="Download App"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
+<a class="center sandy-dl" target="_blank" href="https://itunes.apple.com/gb/app/sandra-reynolds-agency/id882301851?mt=8" title="Download App"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
