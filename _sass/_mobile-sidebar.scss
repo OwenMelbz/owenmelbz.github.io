@@ -37,6 +37,12 @@
             }
         }
 
+        &.skip-featured {
+            nav {
+                opacity: 0;
+            }
+        }
+
         article {
             position: absolute;
             top: 0;
