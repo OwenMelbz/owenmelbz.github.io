@@ -1,8 +1,8 @@
 ---
 layout: default
-title: UX, App, Web Design and Development for Hire
+title: Freelance UX and Web Development for Hire
 description: If you have a web project you need some help with, please do not hesitate to get in touch.
-excerpt: From UX consultancy, to bespoke Laravel applications or even simple WordPress builds, please get in touch - owen@owenmelbourne.com
+excerpt: From freelance UX consultancy, to bespoke Laravel applications or even simple WordPress builds, please get in touch - owen@owenmelbourne.com
 preview: /images/gaming-deluxe/thumbnail.svg
 class: services
 ---
