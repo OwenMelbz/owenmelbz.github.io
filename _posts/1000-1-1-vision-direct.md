@@ -3,7 +3,7 @@ layout: default
 title: Vision Direct
 description: Social experiment to drive sales by helping shoppers pick out their new sunglasses.
 excerpt: 'Creating a highly-performant fun mobile social experiment to drive sales for a new product range built in AngularJS for a leading online contact lens retailer.'
-preview: /images/vision-direct/thumbnail.svg
+preview: thumbnails/vision-direct.svg
 class: my-faceshape
 ---
 

@@ -29,7 +29,7 @@
         <a href="{{post.url}}" title="{{post.title}}" class="{{post.url | slugify}}">
 
             <div class="preview">
-                <img src="{{post.preview}}" alt="{{post.title}}">
+                {% include {{post.preview}} %}
             </div>
 
             <div class="intro">

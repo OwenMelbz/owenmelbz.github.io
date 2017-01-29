@@ -3,7 +3,7 @@ layout: default
 title: Freelance UX and Web Development
 description: If you have a web project you need some help with or any questions, please do not hesitate to get in touch.
 excerpt: From freelance UX consultancy, to bespoke Laravel applications or even simple WordPress builds, please get in touch - owen@owenmelbourne.com
-preview: /images/gaming-deluxe/thumbnail.svg
+preview: thumbnails/4ex.svg
 class: services
 ---
 
