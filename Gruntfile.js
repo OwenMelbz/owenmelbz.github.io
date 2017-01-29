@@ -3,7 +3,7 @@ module.exports = function(grunt){
     grunt.initConfig({
 
         uglify: {
-            production: {
+            js: {
                 options: {
                     compress: true,
                     preserveComments: false,
@@ -11,29 +11,18 @@ module.exports = function(grunt){
                     mangle: true
                 },
                 files: {
-                    'scripts.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']
-                }
-            },
-            dev: {
-                options: {
-                    compress: true,
-                    preserveComments: false,
-                    sourceMap: false,
-                    mangle: true
-                },
-                files: {
-                    'scripts.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']
+                    'app.js' : ['_scripts/vendor/**/*.js', '_scripts/*.js']
                 }
             }
         },
 
         cssmin :{
-            production: {
+            css: {
                 options: {
                     keepSpecialComments: 0
                 },
                 files: {
-                    '_site/style.css' : ['_site/style.css']
+                    '_site/app.css' : ['_site/style.css']
                 }
             }
         },
@@ -61,7 +50,7 @@ module.exports = function(grunt){
 
             js : {
                 files: ['_scripts/**/*.js'],
-                tasks: ['uglify:dev']
+                tasks: ['uglify:js']
             },
 
             img : {
@@ -78,6 +67,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-newer');
 
-    grunt.registerTask('default', ['uglify:dev', 'watch']);
-    grunt.registerTask('deploy', ['uglify:production', 'cssmin']);
+    grunt.registerTask('default', ['uglify:js', 'watch']);
+    grunt.registerTask('deploy', ['uglify:js', 'cssmin']);
 };
