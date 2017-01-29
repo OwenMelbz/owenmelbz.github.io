@@ -2,6 +2,7 @@
 layout: default
 title: Sandra Reynolds
 description: An iPad app for models to showcase their portfolio on the move and for agencies to create short-lists.
+excerpt: An iPad application allowing models and actors to showcase their tailored portfolios, CVs and casting shots for when they're on the move or auditioning for work.
 preview: /images/sandra-reynolds/thumbnail.svg
 class: sandy
 ---
@@ -33,4 +34,3 @@ class: sandy
 > to take their portfolio around the country with them and has received great feedback.
 
 <a class="center" target="_blank" href="https://itunes.apple.com/gb/app/sandra-reynolds-agency/id882301851?mt=8" title="Download App"><img src="/images/nelsons-journey/app-store.svg" alt="Apple AppStore" /></a>
-

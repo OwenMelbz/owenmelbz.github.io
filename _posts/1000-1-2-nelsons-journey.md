@@ -2,6 +2,7 @@
 layout: default
 title: Nelsons Journey
 description: An iPhone &amp; Android App for the worthiest of local charitable causes.
+excerpt: We created a beautiful iPhone and Android app, designed to help children generate positivity from pain for BBC Children in Need charity Nelsons Journey.
 preview: /images/nelsons-journey/thumbnail.svg
 class: nelsons-journey
 ---

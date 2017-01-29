@@ -7,10 +7,10 @@
 
     {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
     {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
+    <meta name="description" content="{{ site.description | strip_html }}">
+    <meta property="og:description" content="{{ site.description | strip_html }}" />
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
     <meta name="notice" content="{{ site.description }}" />
