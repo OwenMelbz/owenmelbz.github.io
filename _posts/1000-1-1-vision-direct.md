@@ -7,8 +7,8 @@ preview: /images/vision-direct/thumbnail.svg
 class: my-faceshape
 ---
 
-# {{page.title}}
-## {{page.description}}
+<h1>{{page.title}}</h1>
+<h2>{{page.description}}</h2>
 
 > <a href="http://www.visiondirect.co.uk/" target="_blank">Vision Direct</a> is one of Europe's largest online contact lens
 > retailer, growing into prescription glasses and sunglasses industry.

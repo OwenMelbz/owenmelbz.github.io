@@ -7,8 +7,8 @@ preview: /images/sandra-reynolds/thumbnail.svg
 class: sandy
 ---
 
-# {{page.title}}
-## {{page.description}}
+<h1>{{page.title}}</h1>
+<h2>{{page.description}}</h2>
 
 > One of my first iPad application projects at <a href="https://www.selesti.com" target="_blank">Selesti</a> involved
 > creating a platform which would allow models to

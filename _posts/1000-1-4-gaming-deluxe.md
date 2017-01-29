@@ -7,8 +7,8 @@ preview: /images/gaming-deluxe/thumbnail.svg
 class: gaming-deluxe
 ---
 
-# {{page.title}}
-## {{page.description}}
+<h1>{{page.title}}</h1>
+<h2>{{page.description}}</h2>
 
 > GamingDeluxe are Europe's leading game server provider,
 > they offer a vast array of high quality game servers

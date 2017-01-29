@@ -6,8 +6,8 @@ preview: /images/4ex/thumbnail.svg
 class: four-ex
 ---
 
-# {{page.title}}
-## {{page.description}}
+<h1>{{page.title}}</h1>
+<h2>{{page.description}}</h2>
 
 > During my time working with the guys at The-Dot, we proposed this
 > concept to Channel 4, the brief was to create a brand and channel

@@ -7,8 +7,8 @@ preview: /images/gaming-deluxe/thumbnail.svg
 class: services
 ---
 
-# {{page.title}}
-## {{page.description}}
+<h1>{{page.title}}</h1>
+<h2>{{page.description}}</h2>
 
 I've been building websites for over 15 years, and working in an agency environment for the past 5 years, focusing on, user experience, interface design, conversion rate optimisation with modern technologies, and a degree background in graphical communication.
 

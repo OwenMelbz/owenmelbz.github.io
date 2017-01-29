@@ -7,8 +7,8 @@ preview: /images/nelsons-journey/thumbnail.svg
 class: nelsons-journey
 ---
 
-# {{page.title}}
-## {{page.description}}
+<h1>{{page.title}}</h1>
+<h2>{{page.description}}</h2>
 
 > As a part of the <a href="https://www.selesti.com" target="_blank">Selesti</a> team, we designed and developed
 > an iOS and Android App in association with Nelsons Journey, a BBC Children in Need
