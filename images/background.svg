@@ -44,20 +44,20 @@
 
           #bottom-stripe {
               fill: #4bc5cf;
-              -webkit-animation: colours 40s ease infinite;
-              -moz-animation: colours 40s ease infinite;
-              -ms-animation: colours 40s ease infinite;
-              -o-animation: colours 40s ease infinite;
-              animation: colours 40s ease infinite;
+              -webkit-animation: colours 30s ease infinite;
+              -moz-animation: colours 30s ease infinite;
+              -ms-animation: colours 30s ease infinite;
+              -o-animation: colours 30s ease infinite;
+              animation: colours 30s ease infinite;
           }
 
           #top-stripe {
               fill: #4bc5cf;
-              -webkit-animation: colours 40s ease infinite;
-              -moz-animation: colours 40s ease infinite;
-              -ms-animation: colours 40s ease infinite;
-              -o-animation: colours 40s ease infinite;
-              animation: colours 40s ease infinite;
+              -webkit-animation: colours 30s ease infinite;
+              -moz-animation: colours 30s ease infinite;
+              -ms-animation: colours 30s ease infinite;
+              -o-animation: colours 30s ease infinite;
+              animation: colours 30s ease infinite;
               -webkit-animation-delay: 3s;
               -moz-animation-delay: 3s;
               -ms-animation-delay: 3s;
