@@ -10,7 +10,7 @@ class: services
 # {{page.title}}
 ## {{page.description}}
 
-I've been building websites for over 15 years, and working in an agency environment for the past 5 years, focusing on, user experience, interface design, conversion rate optimisation and modern technologies, with a degree background in graphical communication.
+I've been building websites for over 15 years, and working in an agency environment for the past 5 years, focusing on, user experience, interface design, conversion rate optimisation with modern technologies, and a degree background in graphical communication.
 
 I offer full stack development for eCommerce, brochure, marketing, lead generation, charity, APIs and open source projects.
 
