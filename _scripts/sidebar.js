@@ -99,4 +99,5 @@ var Sidebar = function( elem ){
 
 $(function(){
     new Sidebar('#sidebar');
+    console.error('demo');
 });
